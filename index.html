@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- 同一个元素的 data-zh / data-en 分别填写中英文，内部文字作为无 JS 时的中文内容。 -->
+  <title data-zh="袁骁斐Glofy" data-en="Glofy Yuan">袁骁斐Glofy</title>
+  <meta name="author" content="袁骁斐 Glofy" data-zh-content="袁骁斐 Glofy" data-en-content="Glofy Yuan">
+  <meta name="description" content="袁骁斐 Glofy 的个人主页：LLM、RL与AI Agent" data-zh-content="袁骁斐 Glofy 的个人主页：LLM、RL与AI Agent" data-en-content="Glofy Yuan’s personal homepage: llm, reinforcement learning, AI agents">
+  <script src="preferences.js">
+</script>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+  <main>
+    <div class="preferences" role="group" aria-label="显示设置" data-zh-aria="显示设置" data-en-aria="Display settings" hidden>
+      <button type="button" id="language-toggle" aria-label="Switch to English">en</button>
+      <button type="button" id="theme-toggle" aria-label="主题：自动">
+        <svg class="theme-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<g id="theme-icon-shape">
+</g>
+</svg>
+        <span id="theme-label">Auto</span>
+      </button>
+    </div>
+    <!-- 内容根据 Glofy_resume_academic.pdf 整理；论文状态和成果指标按简历记载，后续可自行更新。 -->
+    <header class="profile">
+      <div class="profile-text">
+<h1 data-zh="袁骁斐 Glofy" data-en="Glofy Yuan">袁骁斐 Glofy</h1>
+<p data-zh="我在悉尼 EulerAI 担任 AI 工程师实习生，参与金融数据对账平台和 AI Agent 的开发。我拥有新南威尔士大学信息技术硕士学位，以及浙江师范大学金融学学士学位。" data-en="I am an AI Engineer Intern at EulerAI in Sydney, working on financial data reconciliation and AI agents. I hold a Master of Information Technology from UNSW Sydney and a Bachelor of Finance from Zhejiang Normal University.">我在悉尼 EulerAI 担任 AI 工程师实习生，参与金融数据对账平台和 AI Agent 的开发。我拥有新南威尔士大学信息技术硕士学位，以及浙江师范大学金融学学士学位。</p>
+<p data-zh="我的研究涉及大语言模型推理与强化学习、智能体规划、知识库问答，以及机器学习的可靠性与公平性。我也关注将研究方法落地为可复现的实验和实用系统。" data-en="My research spans LLM reasoning and reinforcement learning, agent planning, knowledge base question answering, and the reliability and fairness of machine learning. I also work on reproducible experiments and practical implementations of research methods.">我的研究涉及大语言模型推理与强化学习、智能体规划、知识库问答，以及机器学习的可靠性与公平性。我也关注将研究方法落地为可复现的实验和实用系统。</p>
+        <nav class="contact" aria-label="个人链接" data-zh-aria="个人链接" data-en-aria="Personal links">
+          <a href="mailto:glofy.yuan@gmail.com" data-zh="邮箱" data-en="Email">邮箱</a>
+<span class="separator">/</span>
+          <a href="https://github.com/TSK-Glofy">GitHub</a>
+<span class="separator">/</span>
+          <a href="https://www.linkedin.com/in/xiaofei-yuan/">LinkedIn</a>
+        </nav>
+      </div>
+      <!-- TODO：替换头像文件及中英文 alt。 -->
+      <img class="portrait" src="images/Glofy_selfie.png" alt="袁骁斐 Glofy 的头像" data-zh-alt="袁骁斐 Glofy 的头像" data-en-alt="Glofy Yuan's profile picture">
+    </header>
+    <section aria-labelledby="about-heading">
+<h2 id="about-heading" data-zh="研究兴趣" data-en="Research Interests">研究兴趣</h2>
+<p data-zh="大语言模型与强化学习 · AI Agent 与规划修复 · 知识库问答 · 噪声标签学习 · 大语言模型公平性评估" data-en="Large language models and reinforcement learning · AI agents and plan repair · Knowledge base question answering · Learning with noisy labels · LLM fairness evaluation">大语言模型与强化学习 · AI Agent 与规划修复 · 知识库问答 · 噪声标签学习 · 大语言模型公平性评估</p>
+</section>
+<!-- 动态：复制 li 新增条目，按日期倒序排列；日期和事件根据简历整理。 -->
+<section aria-labelledby="news-heading">
+  <h2 id="news-heading" data-zh="最新动态" data-en="News">最新动态</h2>
+  <ul class="news-list">
+    <li><time class="news-date" datetime="2026-03">[03/2026]</time> <span data-zh="共同参与的论文《When Gender Becomes Visible: Benchmarking Fairness in LLM-Based Resume Screening》获 FAIML 2026 接收。" data-en="Our paper, When Gender Becomes Visible: Benchmarking Fairness in LLM-Based Resume Screening, was accepted at FAIML 2026.">共同参与的论文《When Gender Becomes Visible: Benchmarking Fairness in LLM-Based Resume Screening》获 FAIML 2026 接收。</span></li>
+    <li><time class="news-date" datetime="2025-07">[07/2025]</time> <span data-zh="加入" data-en="Joined">加入</span> <a href="https://www.eulerai.au/">EulerAI</a> <span data-zh="，在悉尼担任 AI 工程师实习生。" data-en="as an AI Engineer Intern in Sydney.">，在悉尼担任 AI 工程师实习生。</span></li>
+    <li><time class="news-date" datetime="2025-05">[05/2025]</time> <span data-zh="获得新南威尔士大学信息技术硕士学位，WAM 为 Distinction。" data-en="Completed my Master of Information Technology at UNSW Sydney with a Distinction WAM.">获得新南威尔士大学信息技术硕士学位，WAM 为 Distinction。</span></li>
+  </ul>
+</section>
+<section aria-labelledby="projects-heading">
+<h2 id="projects-heading" data-zh="论文与研究" data-en="Publications &amp; Manuscripts">论文与研究</h2>
+<!-- 以下状态按所提供简历记录；投稿不代表接收。论文标题保留英文原题。暂无论文网址，后续可将 h3 内文字改为链接。 -->
+<!-- 论文或代码公开后可在此添加链接。 -->
+<article class="project">
+<div>
+<h3>Replan, Repair, or Edit? A Unified Empirical Evaluation of Travel Agents for Itinerary Revision under Resource Disruptions</h3>
+<!-- 作者顺序按用户确认的邮件列表；重复登记的 Leyan Ni 保留首次出现的位置。 -->
+<p class="authors">Xiaofei Yuan, Yan Zhang, Shaobo Qiao, Huangleshuai He, Leyan Ni, Mingchen Ju, Sijia Xu, Yves Tang, Zhengyi Yang</p>
+<p class="metadata" data-zh="ADC 2026 · 已投稿 · 2026 年 9 月" data-en="ADC 2026 · Submitted · September 2026">ADC 2026 · 已投稿 · 2026 年 9 月</p>
+<div class="paper-resources">
+<details class="paper-abstract">
+<summary data-zh="摘要" data-en="abstract">摘要</summary>
+<p lang="en">Travel-planning agents generate itineraries that may become infeasible after acceptance because of flight cancellations, hotel unavailability, or attraction closures. Revising these itineraries involves full replanning, classical plan repair, and LLM-based travel-agent revision, whose differing task formulations and evaluation protocols hinder comparison. We conduct a systematic empirical study using two TREK-derived benchmark sets: 500 single-disruption cases, including feasible and infeasible instances, and 200 feasible simultaneous compound-disruption cases. We compare LLM–Z3 full replanning, IPyHOPPER hierarchical repair, and an iTIMO local-revision adapter across effectiveness, plan stability, and computational cost. LLM–Z3 with Gemini achieved the highest observed compound-disruption success. IPyHOPPER nearly matched that configuration’s single-disruption overall success, while preserving substantially more of the accepted itinerary on successful repairs. Successful hierarchical and local repairs made fewer edits and retained more accepted commitments than full replanning. Computational profiles differed: IPyHOPPER used no LLM inference, the evaluated LLM–Z3 adapter used compact one-call inference, and the iTIMO adapter consumed substantially more tokens. The study provides practical guidelines for balancing feasibility recovery, commitment preservation, and computational cost within evaluated settings.</p>
+</details>
+<!-- 补链接时，将对应 span 替换为带 href 的 a 标签。 -->
+<div class="paper-resource-links"><span aria-hidden="true">/</span> <span class="resource-placeholder" aria-disabled="true">pdf</span> <span aria-hidden="true">/</span> <span class="resource-placeholder" aria-disabled="true">code</span> <span aria-hidden="true">/</span> <span class="resource-placeholder" aria-disabled="true">arXiv</span></div>
+</div>
+</div>
+</article>
+<!-- 论文或代码公开后可在此添加链接。 -->
+<article class="project">
+<div>
+<h3>Robust Forex Fraud Detection under Noisy Supervision via Label-Quality-Aware Learning</h3>
+<p class="authors">Xinru Cao, Xiaofei Yuan, Weiyuan Wang, Jianke Yu, Yifu Tang, Zihan Yang, Xin Shu, Ye Gu, Hualong Lin, Guanfeng Liu, Zhengyi Yang</p>
+<p class="metadata" data-zh="ADC 2026 · 已投稿 · 2026 年 9 月" data-en="ADC 2026 · Submitted · September 2026">ADC 2026 · 已投稿 · 2026 年 9 月</p>
+<div class="paper-resources">
+<details class="paper-abstract">
+<summary data-zh="摘要" data-en="abstract">摘要</summary>
+<p lang="en">The Foreign Exchange (Forex) market is a decentralised, high-frequency trading environment where fraudulent behaviours can be concealed within high-volume and irregular temporal transaction streams. Detecting such activities is challenging due to complex behavioural dependencies, severe class imbalance, and weak supervision in real-world fraud labels. Existing fraud detection approaches often assume that fraud labels are reliable. However, these labels are typically generated through rule-based screening followed by expert verification, which inevitably introduces uncertainty and potential noise into the supervision signals. To tackle this challenge, we propose a label-quality-aware fraud detection framework. The framework integrates out-of-fold Random Forest prediction with Confident Learning to estimate sample-level label quality and identify potentially unreliable training labels. It further applies noise-handling strategies before passing the data to the ensemble fraud detection model that combines probabilistic screening with soft-voting integration. Extensive experiments on a real-world Forex transaction dataset evaluate model robustness under different levels of controlled label noise. Empirical evaluation demonstrates that increasing label corruption degrades fraud detection performance, while downweighting provides more stable performance recovery than removal and relabelling. Applying label-quality-aware downweighting directly to the original labels also improves detection performance, demonstrating the practical value of robustness-aware learning for scalable Forex fraud detection under noisy supervision.</p>
+</details>
+<!-- 补链接时，将对应 span 替换为带 href 的 a 标签。 -->
+<div class="paper-resource-links"><span aria-hidden="true">/</span> <span class="resource-placeholder" aria-disabled="true">pdf</span> <span aria-hidden="true">/</span> <span class="resource-placeholder" aria-disabled="true">code</span> <span aria-hidden="true">/</span> <span class="resource-placeholder" aria-disabled="true">arXiv</span></div>
+</div>
+</div>
+</article>
+<!-- 论文或代码公开后可在此添加链接。 -->
+<article class="project">
+<div>
+<h3>ODRPO: On-policy Dense Reward Policy Optimization</h3>
+<!-- 作者名单待补充：放在此处，按确认后的顺序填写。 -->
+<p class="metadata" data-zh="ICLR 2027 · 进行中 · 2026 年 9 月" data-en="ICLR 2027 · Ongoing · September 2026">ICLR 2027 · 进行中 · 2026 年 9 月</p>
+<div class="paper-resources">
+<details class="paper-abstract">
+<summary data-zh="摘要" data-en="abstract">摘要</summary>
+<p lang="en">Reinforcement learning has become an important paradigm for improving large language model reasoning, yet policy optimization methods such as GRPO still face two core limitations: reward signals are provided only at the sequence level, and gradient signals vanish when all trajectories within a group are uniformly correct or uniformly incorrect. To address these issues, we propose ODRPO (On-policy Dense Reward Policy Optimization), an on-policy reinforcement learning method that redistributes sequence-level credit using token-level signals derived from same-model privileged conditioning. ODRPO contains three components: (1) Smooth GRPO, which prevents degenerate groups from collapsing to zero advantage; (2) a privileged teacher view built from the same underlying model conditioned on the problem and reference solution; and (3) a JSD-based multiplicative reweighting mechanism that redistributes sequence-level advantages across token positions without introducing an external teacher or additional trainable model parameters. Experiments on multiple mathematical reasoning benchmarks show that, under the current setting, ODRPO achieves the strongest overall accuracy–length tradeoff among the compared methods, improving both Avg@1 and Avg@8 while showing the smallest reduction in response length. In addition, token-level analysis suggests that the resulting JSD weights are semantically selective, assigning larger weights to reasoning- and method-related tokens than to low-importance categories such as numerals, formatting tokens, and filler words.</p>
+</details>
+<!-- 补链接时，将对应 span 替换为带 href 的 a 标签。 -->
+<div class="paper-resource-links"><span aria-hidden="true">/</span> <span class="resource-placeholder" aria-disabled="true">pdf</span> <span aria-hidden="true">/</span> <span class="resource-placeholder" aria-disabled="true">code</span> <span aria-hidden="true">/</span> <span class="resource-placeholder" aria-disabled="true">arXiv</span></div>
+</div>
+</div>
+</article>
+<!-- 论文或代码公开后可在此添加链接。 -->
+<article class="project">
+<div>
+<h3>ECHO: Decoding Answers, Not Programs, for Knowledge Base Question Answering</h3>
+<p class="authors">Jiate Liu, Zhengyi Yang, Zihan Yang, Yifu Tang, Sichao Li, Xiaofei Yuan, Wenke Yang, Bocheng Han, Junda Lu</p>
+<p class="metadata" data-zh="WSDM 2027 · 已投稿 · 2026 年 8 月" data-en="WSDM 2027 · Submitted · August 2026">WSDM 2027 · 已投稿 · 2026 年 8 月</p>
+<div class="paper-resources">
+<details class="paper-abstract">
+<summary data-zh="摘要" data-en="abstract">摘要</summary>
+<p lang="en">Knowledge base question answering (KBQA) commonly uses semantic parsing to translate natural-language questions into executable programs over a knowledge base (KB). Existing systems typically select the single highest-scoring program, even when multiple programs return the same answer, and use execution only to verify program validity. Consequently, evidence for an answer is fragmented across programs, while mismatches between a question and the returned answer are not reflected in program scores. We propose ECHO, an execution-aware answer-level decoding framework. ECHO predicts a type skeleton to guide grounded program enumeration, executes all enumerated candidates, and groups programs by their returned answers. It scores each program using a noisy-channel model that combines an answer-aware channel term, measuring how well the program and its execution result explain the input question, with a skeleton-conditioned prior over the program. A tempered sum then aggregates the scores of programs supporting each answer. ECHO achieves state-of-the-art performance on three widely used benchmarks, GrailQA, WebQSP, and GraphQuestions, across all reported EM and F1 metrics, while answering each question an order of magnitude faster than systems with comparable accuracy. Controlled comparisons further confirm the effectiveness of our proposed answer-level decoding.</p>
+</details>
+<!-- 补链接时，将对应 span 替换为带 href 的 a 标签。 -->
+<div class="paper-resource-links"><span aria-hidden="true">/</span> <span class="resource-placeholder" aria-disabled="true">pdf</span> <span aria-hidden="true">/</span> <span class="resource-placeholder" aria-disabled="true">code</span> <span aria-hidden="true">/</span> <span class="resource-placeholder" aria-disabled="true">arXiv</span></div>
+</div>
+</div>
+</article>
+<!-- 论文或代码公开后可在此添加链接。 -->
+<article class="project">
+<div>
+<h3>Changing Only Gender: A Counterfactual Benchmark for Auditing Gender Fairness in LLM Resume Screening</h3>
+<p class="authors">Yiheng Lu, Yi Ding, Zihan Yang, Yifu Tang, Xiaofei Yuan, Wei Liu, Mingchen Ju, Xin Shu, Wenke Yang, Zhengyi Yang</p>
+<p class="metadata" data-zh="AusDM 2026 · 已投稿 · 2026 年 7 月" data-en="AusDM 2026 · Submitted · July 2026">AusDM 2026 · 已投稿 · 2026 年 7 月</p>
+<div class="paper-resources">
+<details class="paper-abstract">
+<summary data-zh="摘要" data-en="abstract">摘要</summary>
+<p lang="en">Large language models (LLMs) are increasingly deployed for resume screening, yet it remains unclear whether they respond fairly to gender-related cues embedded in resumes. To address this question, we introduce a controlled benchmark for auditing gender bias in LLM-based job-resume matching. The benchmark integrates publicly available job descriptions with de-identified real-world resumes and constructs counterfactual gender variants that differ solely in gender-related information, including names, pronouns, and explicit gender labels. In addition to conventional female and male variants, the benchmark incorporates a non-binary variant and a neopronoun-associated variant, denoted as Neutral and Neo, respectively. Using a unified evaluation protocol, we assess six widely used LLM families: ChatGPT, Claude, DeepSeek, Gemini, MiMo, and Qwen. We also conduct multi-factor experiments across job levels, industries, and progressively explicit gender-cue disclosure conditions. Our analysis reveals that the average scores do not exhibit a linear trend with increasing disclosure intensity, but instead vary across contexts. Specifically, Male and Female candidates achieve the highest scores when no gender cues are disclosed, whereas Neutral and Neo candidates obtain their highest scores under full disclosure. These findings suggest that fairness audits should attend not only to explicit demographic indicators but also to indirect signals, along with their interactions with occupational and evaluative contexts.</p>
+</details>
+<!-- 补链接时，将对应 span 替换为带 href 的 a 标签。 -->
+<div class="paper-resource-links"><span aria-hidden="true">/</span> <span class="resource-placeholder" aria-disabled="true">pdf</span> <span aria-hidden="true">/</span> <span class="resource-placeholder" aria-disabled="true">code</span> <span aria-hidden="true">/</span> <span class="resource-placeholder" aria-disabled="true">arXiv</span></div>
+</div>
+</div>
+</article>
+<!-- 论文或代码公开后可在此添加链接。 -->
+<article class="project">
+<div>
+<h3>When Gender Becomes Visible: Benchmarking Fairness in LLM-Based Resume Screening</h3>
+<p class="authors">Yi Ding, Yiheng Lu, Xiaofei Yuan, Wei Liu, Ziyue Wu, Mingchen Ju, Ziyan Zhuang, Liuyi Chen, Zhengyi Yang</p>
+<p class="metadata" data-zh="FAIML 2026 · 已接收 · 2026 年 3 月" data-en="FAIML 2026 · Accepted · March 2026">FAIML 2026 · 已接收 · 2026 年 3 月</p>
+<div class="paper-resources">
+<details class="paper-abstract">
+<summary data-zh="摘要" data-en="abstract">摘要</summary>
+<p lang="en">Large language models (LLMs) are increasingly used for resume screening, but their sensitivity to gender-related cues remains unclear. We present a controlled benchmark for auditing gender bias in LLM-based job-resume matching, combining public job descriptions, de-identified real resumes, and counterfactual variants that vary only identity signals such as names, pronouns, and explicit gender attributes. Beyond male and female conditions, our benchmark includes non-binary and neopronoun-based identity presentations. We evaluate six LLM families: ChatGPT, Gemini, Claude, DeepSeek, MiMo, and Qwen, using a unified evidence-based scoring rubric. Across overall, seniority-level, and industry-level analyses, we find that model family, job level, and industry explain larger score variation than identity condition, while gender cues still cause small but recurring shifts, especially for neopronoun-based profiles. Our results show that fairness risks in LLM-assisted hiring are context-dependent and require aggregate, stratified, and matched auditing.</p>
+</details>
+<!-- 补链接时，将对应 span 替换为带 href 的 a 标签。 -->
+<div class="paper-resource-links"><span aria-hidden="true">/</span> <a href="data/Gender_bias___FAIML_2026.pdf" target="_blank" rel="noopener noreferrer">pdf</a> <span aria-hidden="true">/</span> <span class="resource-placeholder" aria-disabled="true">code</span> <span aria-hidden="true">/</span> <span class="resource-placeholder" aria-disabled="true">arXiv</span></div>
+</div>
+</div>
+</article>
+</section>
+<!-- 独立项目展示：复制 article.showcase 可新增项目。标题、简介分别填写中英文。 -->
+<section aria-labelledby="portfolio-heading">
+  <h2 id="portfolio-heading" data-zh="项目" data-en="Projects">项目</h2>
+  <article class="showcase">
+    <img class="showcase-image" src="images/velo-raw.jpg" alt="Velo 项目标志" data-zh-alt="Velo 项目标志" data-en-alt="Velo logo">
+    <div>
+      <h3><a href="https://github.com/TSK-Glofy/Velo" data-zh="Velo — 视频处理桌面应用" data-en="Velo — Video Processing Desktop App">Velo — 视频处理桌面应用</a></h3>
+      <p class="metadata" data-zh="2026 年 3 月" data-en="March 2026">2026 年 3 月</p>
+      <p class="project-links"><a href="https://github.com/TSK-Glofy/Velo" data-zh="GitHub / 源代码" data-en="GitHub / Code">GitHub / 源代码</a></p>
+      <p class="showcase-description" data-zh="一款免费开源的视频处理工具，无需编程或输入命令，就能裁剪、合并视频，以及把视频画面保存成图片。支持中英文界面，可实时查看处理进度。" data-en="A free, open-source app for trimming and merging videos and saving video frames as images—no coding needed. Available in English and Chinese, with live progress updates.">一款免费开源的视频处理工具，无需编程或输入命令，就能裁剪、合并视频，以及把视频画面保存成图片。支持中英文界面，可实时查看处理进度。</p>
+    </div>
+  </article>
+  <article class="showcase">
+    <img class="showcase-image" src="images/involutionhell-mascot.webp" alt="内卷地狱吉祥物" data-zh-alt="内卷地狱吉祥物" data-en-alt="内卷地狱 mascot">
+    <div>
+      <h3><a href="https://involutionhell.com/zh" data-zh-href="https://involutionhell.com/zh" data-en-href="https://involutionhell.com/en" data-zh="内卷地狱 - 开源学习平台" data-en="内卷地狱 - Open Source Learning Platform">内卷地狱 - 开源学习平台</a></h3>
+      <p class="metadata" data-zh="2025 年 8 月" data-en="August 2025">2025 年 8 月</p>
+      <p class="project-links"><a href="https://involutionhell.com/zh" data-zh-href="https://involutionhell.com/zh" data-en-href="https://involutionhell.com/en" data-zh="访问平台" data-en="Visit Platform">访问平台</a></p>
+      <p class="showcase-description" data-zh="我参与建设的学习交流平台，面向正在学习计算机知识、准备求职或关注 AI 发展的同学。大家可以在这里分享实用文章、发现有趣的项目，一起学习。" data-en="A community learning platform I helped build for students exploring computing, preparing for job hunting, or keeping up with AI. Members can share useful articles, discover interesting projects, and learn together.">我参与建设的学习交流平台，面向正在学习计算机知识、准备求职或关注 AI 发展的同学。大家可以在这里分享实用文章、发现有趣的项目，一起学习。</p>
+    </div>
+  </article>
+</section>
+<!-- 频道：中英文介绍及 B 站链接。 -->
+<section aria-labelledby="channel-heading">
+  <h2 id="channel-heading" data-zh="频道" data-en="Channel">频道</h2>
+  <article class="showcase">
+    <img class="showcase-image" src="images/bilibili-avatar.png" alt="我的 B 站头像" data-zh-alt="我的 B 站头像" data-en-alt="My Bilibili avatar">
+    <div>
+      <p data-zh="代码之外，我也在 B 站记录游戏里的精彩瞬间和留学生活。这是一个中文频道，分享我喜欢的游戏，以及一路摸索积累的经验。" data-en="Away from coding, I share gaming moments and experiences from studying abroad on Bilibili. My Chinese-language channel brings together the games I enjoy and the things I learn along the way.">代码之外，我也在 B 站记录游戏里的精彩瞬间和留学生活。这是一个中文频道，分享我喜欢的游戏，以及一路摸索积累的经验。</p>
+      <p data-zh="欢迎来看看视频，也一起聊聊游戏和生活。" data-en="Drop by for a video, and join the conversation about games and life.">欢迎来看看视频，也一起聊聊游戏和生活。</p>
+      <p class="project-links"><a href="https://space.bilibili.com/8286685" data-zh="前往 B 站观看" data-en="Watch on Bilibili">前往 B 站观看</a> / <a href="https://www.xiaohongshu.com/user/profile/5c7fdfb0000000001203ec4b" data-zh="前往小红书观看" data-en="Watch on RedNote">前往小红书观看</a></p>
+    </div>
+  </article>
+</section>
+<section aria-labelledby="skills-heading">
+<h2 id="skills-heading" data-zh="技能" data-en="Skills">技能</h2>
+<ul>
+<li data-zh="编程：Python、TypeScript、C++、Rust、SQL。" data-en="Programming: Python, TypeScript, C++, Rust, and SQL.">编程：Python、TypeScript、C++、Rust、SQL。</li>
+<li data-zh="模型训练：使用 slime 框架在 GPU 集群上训练语言模型。" data-en="Model training: Training language models on GPU clusters using the slime framework.">模型训练：使用 slime 框架在 GPU 集群上训练语言模型。</li>
+<li data-zh="Linux 与实验复现：环境搭建、依赖排查和已发表实验的复现。" data-en="Linux and experiment reproduction: Environment setup, dependency troubleshooting, and reproduction of published experiments.">Linux 与实验复现：环境搭建、依赖排查和已发表实验的复现。</li>
+<li data-zh="研究工程：GitHub 仓库组织、实验流水线实现和自动评估流程。" data-en="Research engineering: GitHub repository organization, experimental pipelines, and automated evaluation workflows.">研究工程：GitHub 仓库组织、实验流水线实现和自动评估流程。</li>
+<li data-zh="大语言模型评估：多模型基准测试、受控对比和跨实验条件分析。" data-en="LLM evaluation: Multi-model benchmarking, controlled comparisons, and analysis across experimental conditions.">大语言模型评估：多模型基准测试、受控对比和跨实验条件分析。</li>
+<li data-zh="数据与基础设施：PostgreSQL、Redis、Docker、AWS S3、GitHub Actions、Pytest。" data-en="Data and infrastructure: PostgreSQL, Redis, Docker, AWS S3, GitHub Actions, and Pytest.">数据与基础设施：PostgreSQL、Redis、Docker、AWS S3、GitHub Actions、Pytest。</li>
+</ul>
+</section>
+    <footer>
+      <p>
+<span data-zh="页面布局参考" data-en="Layout adapted from">页面布局参考</span> <a href="https://github.com/jonbarron/jonbarron.github.io" data-zh="这里" data-en="here">here</a>.</p>
+    </footer>
+  </main>
+</body>
+</html>
