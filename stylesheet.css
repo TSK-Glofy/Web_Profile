@@ -1,9 +1,6 @@
 /* 保留原模板的 800px 居中布局、蓝色链接和图文项目列表。 */
 :root { color-scheme: light; --bg: #fff; --text: #222; --muted: #595959; --link: #1772d0; --hover: #a65300; --highlight: #ffffd0; --control: #f5f6f8; --border: #c8cdd3; }
 :root[data-theme="dark"] { color-scheme: dark; --bg: #171a1f; --text: #e5e8ed; --muted: #b3bbc7; --link: #83baff; --hover: #ffc27a; --highlight: #343321; --control: #252a32; --border: #596474; }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme]) { color-scheme: dark; --bg: #171a1f; --text: #e5e8ed; --muted: #b3bbc7; --link: #83baff; --hover: #ffc27a; --highlight: #343321; --control: #252a32; --border: #596474; }
-}
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--bg); color: var(--text); font-family: Lato, Arial, "Microsoft YaHei", sans-serif; font-size: 14px; line-height: 1.65; }
 main { max-width: 800px; margin: 0 auto; padding: 36px 20px 20px; }
@@ -14,8 +11,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--link); outline-
 [hidden] { display: none !important; }
 .preferences button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 46px; padding: 0 17px; border: 1px solid var(--border); border-radius: 999px; background: var(--bg); color: var(--text); font: inherit; font-size: 18px; line-height: 1; cursor: pointer; }
 .preferences button:hover { border-color: var(--link); }
-#language-toggle { width: 46px; padding: 0; flex-shrink: 0; }
-#theme-toggle { min-width: 112px; }
+#language-toggle, #theme-toggle { width: 46px; padding: 0; flex-shrink: 0; }
 .theme-icon { width: 22px; height: 22px; flex-shrink: 0; }
 h1 { margin: 0 0 18px; font-size: 32px; font-weight: 400; text-align: center; line-height: 1.3; }
 h2 { margin: 0 0 12px; font-size: 22px; font-weight: 400; line-height: 1.4; }

@@ -14,21 +14,21 @@
 <body>
   <main>
     <div class="preferences" role="group" aria-label="显示设置" data-zh-aria="显示设置" data-en-aria="Display settings" hidden>
-      <button type="button" id="language-toggle" aria-label="Switch to English">en</button>
-      <button type="button" id="theme-toggle" aria-label="主题：自动">
+      <button type="button" id="language-toggle" aria-label="Switch to English">En</button>
+      <button type="button" id="theme-toggle" aria-label="切换为夜晚模式">
         <svg class="theme-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
 <g id="theme-icon-shape">
 </g>
 </svg>
-        <span id="theme-label">Auto</span>
       </button>
     </div>
     <!-- 内容根据 Glofy_resume_academic.pdf 整理；论文状态和成果指标按简历记载，后续可自行更新。 -->
     <header class="profile">
       <div class="profile-text">
 <h1 data-zh="袁骁斐 Glofy" data-en="Glofy Yuan">袁骁斐 Glofy</h1>
-<p data-zh="我在悉尼 EulerAI 担任 AI 工程师实习生，参与金融数据对账平台和 AI Agent 的开发。我拥有新南威尔士大学信息技术硕士学位，以及浙江师范大学金融学学士学位。" data-en="I am an AI Engineer Intern at EulerAI in Sydney, working on financial data reconciliation and AI agents. I hold a Master of Information Technology from UNSW Sydney and a Bachelor of Finance from Zhejiang Normal University.">我在悉尼 EulerAI 担任 AI 工程师实习生，参与金融数据对账平台和 AI Agent 的开发。我拥有新南威尔士大学信息技术硕士学位，以及浙江师范大学金融学学士学位。</p>
-<p data-zh="我的研究涉及大语言模型推理与强化学习、智能体规划、知识库问答，以及机器学习的可靠性与公平性。我也关注将研究方法落地为可复现的实验和实用系统。" data-en="My research spans LLM reasoning and reinforcement learning, agent planning, knowledge base question answering, and the reliability and fairness of machine learning. I also work on reproducible experiments and practical implementations of research methods.">我的研究涉及大语言模型推理与强化学习、智能体规划、知识库问答，以及机器学习的可靠性与公平性。我也关注将研究方法落地为可复现的实验和实用系统。</p>
+<p data-zh="我目前在悉尼 EulerAI 担任 AI Engineer intern，参与金融数据对账平台和 AI Agent 的开发。我毕业于 UNSW Master of IT，本科在浙江师范大学学习金融。" data-en="I am an AI Engineer intern at EulerAI in Sydney, working on financial data reconciliation and AI agents. I hold a Master of Information Technology from UNSW Sydney and a Bachelor of Finance from Zhejiang Normal University.">我目前在悉尼 EulerAI 担任 AI Engineer intern，参与金融数据对账平台和 AI Agent 的开发。我毕业于 UNSW Master of IT，本科在浙江师范大学学习金融。</p>
+<p data-zh="我喜欢把想法做成真正能用的软件，参与过 AI 系统和全栈应用的开发。遇到不熟悉的技术问题，我愿意花时间弄懂，再一步步解决。我也把 Claude 和 Codex 等 AI-assisted coding 工具融入日常开发，从梳理想法、设计数据库到实现、测试和迭代，让想法更快落地。" data-en="I enjoy turning ideas into useful software, with experience building AI systems and full-stack applications. I am curious about unfamiliar technical problems and like to work through them until I understand how to solve them. I use AI-assisted coding tools such as Claude and Codex throughout my daily workflow, from exploring ideas and designing databases to implementation, testing, and iteration.">我喜欢把想法做成真正能用的软件，参与过 AI 系统和全栈应用的开发。遇到不熟悉的技术问题，我愿意花时间弄懂，再一步步解决。我也把 Claude 和 Codex 等 AI-assisted coding 工具融入日常开发，从梳理想法、设计数据库到实现、测试和迭代，让想法更快落地。</p>
+<p><strong data-zh="Goal：" data-en="Goal: ">Goal：</strong><span data-zh="用免费的实用软件帮助别人解决问题，让没有技术背景的人也能轻松使用，少因信息差支付不合理的中介费用。" data-en="To help people solve everyday problems with free, easy-to-use software, so that a lack of technical knowledge does not mean paying unfair fees to intermediaries.">用免费的实用软件帮助别人解决问题，让没有技术背景的人也能轻松使用，少因信息差支付不合理的中介费用。</span></p>
         <nav class="contact" aria-label="个人链接" data-zh-aria="个人链接" data-en-aria="Personal links">
           <a href="mailto:glofy.yuan@gmail.com" data-zh="邮箱" data-en="Email">邮箱</a>
 <span class="separator">/</span>
@@ -44,14 +44,22 @@
 <h2 id="about-heading" data-zh="研究兴趣" data-en="Research Interests">研究兴趣</h2>
 <p data-zh="大语言模型与强化学习 · AI Agent 与规划修复 · 知识库问答 · 噪声标签学习 · 大语言模型公平性评估" data-en="Large language models and reinforcement learning · AI agents and plan repair · Knowledge base question answering · Learning with noisy labels · LLM fairness evaluation">大语言模型与强化学习 · AI Agent 与规划修复 · 知识库问答 · 噪声标签学习 · 大语言模型公平性评估</p>
 </section>
-<!-- 动态：复制 li 新增条目，按日期倒序排列；日期和事件根据简历整理。 -->
+<!-- 动态：复制 li 新增条目，按日期倒序排列；日期和事件由本人提供。 -->
 <section aria-labelledby="news-heading">
   <h2 id="news-heading" data-zh="最新动态" data-en="News">最新动态</h2>
   <ul class="news-list">
-    <li><time class="news-date" datetime="2026-03">[03/2026]</time> <span data-zh="共同参与的论文《When Gender Becomes Visible: Benchmarking Fairness in LLM-Based Resume Screening》获 FAIML 2026 接收。" data-en="Our paper, When Gender Becomes Visible: Benchmarking Fairness in LLM-Based Resume Screening, was accepted at FAIML 2026.">共同参与的论文《When Gender Becomes Visible: Benchmarking Fairness in LLM-Based Resume Screening》获 FAIML 2026 接收。</span></li>
-    <li><time class="news-date" datetime="2025-07">[07/2025]</time> <span data-zh="加入" data-en="Joined">加入</span> <a href="https://www.eulerai.au/">EulerAI</a> <span data-zh="，在悉尼担任 AI 工程师实习生。" data-en="as an AI Engineer Intern in Sydney.">，在悉尼担任 AI 工程师实习生。</span></li>
-    <li><time class="news-date" datetime="2025-05">[05/2025]</time> <span data-zh="获得新南威尔士大学信息技术硕士学位，WAM 为 Distinction。" data-en="Completed my Master of Information Technology at UNSW Sydney with a Distinction WAM.">获得新南威尔士大学信息技术硕士学位，WAM 为 Distinction。</span></li>
+    <li><time class="news-date" datetime="2026-05" data-zh="[2026/05]" data-en="[05/2026]">[2026/05]</time> <span data-zh="第一篇论文被 accept 了！科研路上的第一个里程碑。" data-en="My first paper was accepted! A first milestone in my research journey.">第一篇论文被 accept 了！科研路上的第一个里程碑。</span></li>
+    <li><time class="news-date" datetime="2026-03" data-zh="[2026/03]" data-en="[03/2026]">[2026/03]</time> <span data-zh="提交了第一篇论文，期待好消息！" data-en="Submitted my first paper. Fingers crossed!">提交了第一篇论文，期待好消息！</span></li>
+    <li><time class="news-date" datetime="2026-02" data-zh="[2026/02]" data-en="[02/2026]">[2026/02]</time> <span data-zh="开始探索学术研究，加入项目组，动笔写第一篇论文。" data-en="Took my first steps into research: joined a research team and started writing my first paper.">开始探索学术研究，加入项目组，动笔写第一篇论文。</span></li>
+    <li><time class="news-date" datetime="2026-01" data-zh="[2026/01]" data-en="[01/2026]">[2026/01]</time> <span data-zh="加入 Eigenflow 项目，开始探索全栈开发！" data-en="Joined the Eigenflow project and started exploring full-stack development!">加入 Eigenflow 项目，开始探索全栈开发！</span></li>
+    <li><time class="news-date" datetime="2025-07" data-zh="[2025/07]" data-en="[07/2025]">[2025/07]</time> <span data-zh="Hello," data-en="Hello,">Hello,</span> <a href="https://www.eulerai.au/">EulerAI</a><span data-zh="！以 AI Engineer intern 的身份开启新篇章。" data-en="! Started a new chapter as an AI Engineer Intern.">！以 AI Engineer intern 的身份开启新篇章。</span></li>
+    <li><time class="news-date" datetime="2025-07" data-zh="[2025/07]" data-en="[07/2025]">[2025/07]</time> <span data-zh="正式从 UNSW Master of IT 毕业！" data-en="Officially graduated from UNSW with a Master of Information Technology!">正式从 UNSW Master of IT 毕业！</span></li>
+    <li><time class="news-date" datetime="2025-06" data-zh="[2025/06]" data-en="[06/2025]">[2025/06]</time> <span data-zh="Fun fact：在 hospitality 做了一个月的前台服务生，体验了一番代码之外的工作。" data-en="Fun fact: spent a month working in a front-of-house hospitality role. A little adventure beyond coding!">Fun fact：在 hospitality 做了一个月的前台服务生，体验了一番代码之外的工作。</span></li>
+    <li><time class="news-date" datetime="2023-05" data-zh="[2023/05]" data-en="[05/2023]">[2023/05]</time> <span data-zh="入学 UNSW Master of IT。Hello, Sydney!" data-en="Started my Master of Information Technology at UNSW. Hello, Sydney!">入学 UNSW Master of IT。Hello, Sydney!</span></li>
+    <li><time class="news-date" datetime="2023-01" data-zh="[2023/01]" data-en="[01/2023]">[2023/01]</time> <span data-zh="收到 UNSW 的 unconditional offer，下一站：悉尼！" data-en="Received an unconditional offer from UNSW. Next stop: Sydney!">收到 UNSW 的 unconditional offer，下一站：悉尼！</span></li>
+    <li><time class="news-date" datetime="2022-06" data-zh="[2022/06]" data-en="[06/2022]">[2022/06]</time> <span data-zh="从浙江师范大学毕业，告别本科时光！" data-en="Graduated from Zhejiang Normal University. That's a wrap on my undergraduate years!">从浙江师范大学毕业，告别本科时光！</span></li>
   </ul>
+  <p data-zh="……下一站，会是什么？" data-en="… What's next?">……下一站，会是什么？</p>
 </section>
 <section aria-labelledby="projects-heading">
 <h2 id="projects-heading" data-zh="论文与研究" data-en="Publications &amp; Manuscripts">论文与研究</h2>
